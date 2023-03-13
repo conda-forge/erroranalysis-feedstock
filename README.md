@@ -1,11 +1,11 @@
-About erroranalysis
-===================
+About erroranalysis-feedstock
+=============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/erroranalysis-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/microsoft/responsible-ai-widgets
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/erroranalysis-feedstock/blob/main/LICENSE.txt)
 
 Summary: Core error analysis APIs
 
