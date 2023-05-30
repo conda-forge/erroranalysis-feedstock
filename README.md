@@ -9,6 +9,28 @@ Package license: MIT
 
 Summary: Core error analysis APIs
 
+Development: https://github.com/microsoft/responsible-ai-toolbox
+
+Documentation: https://responsibleaitoolbox.ai/
+
+**Responsible AI Toolbox**: `erroranalysis`
+
+Responsible AI is an approach to assessing, developing, and deploying AI systems in a safe,
+trustworthy, and ethical manner, and take responsible decisions and actions.
+
+Responsible AI Toolbox is a suite of tools providing a collection of model and data exploration
+and assessment user interfaces and libraries that enable a better understanding of AI systems.
+These interfaces and libraries empower developers and stakeholders of AI systems to develop and
+monitor AI more responsibly, and take better data-driven actions.
+
+- `erroranalysis` is one of the tools of RAI Toolbox.
+
+<p align="center">
+<img src="https://raw.githubusercontent.com/microsoft/responsible-ai-widgets/main/img/responsible-ai-toolbox.png" alt="ResponsibleAIToolboxOverview" width="750"/>
+
+PyPI: [https://pypi.org/project/erroranalysis/](https://pypi.org/project/erroranalysis/)
+
+
 Current build status
 ====================
 
@@ -145,4 +167,5 @@ Feedstock Maintainers
 
 * [@bgalvao](https://github.com/bgalvao/)
 * [@janjagusch](https://github.com/janjagusch/)
+* [@sugatoray](https://github.com/sugatoray/)
 
