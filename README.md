@@ -25,9 +25,6 @@ monitor AI more responsibly, and take better data-driven actions.
 
 - `erroranalysis` is one of the tools of RAI Toolbox.
 
-<p align="center">
-<img src="https://raw.githubusercontent.com/microsoft/responsible-ai-widgets/main/img/responsible-ai-toolbox.png" alt="ResponsibleAIToolboxOverview" width="750"/>
-
 PyPI: [https://pypi.org/project/erroranalysis/](https://pypi.org/project/erroranalysis/)
 
 
