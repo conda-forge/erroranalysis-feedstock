@@ -1,5 +1,5 @@
 {% set name = "erroranalysis" %}
-{% set version = "0.4.5" %}
+{% set version = "0.5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/erroranalysis-{{ version }}.tar.gz
-  sha256: c217f205103cc14346e04382e42a587411eb564a130cd2cd768600ec6acf0085
+  sha256: 5fc687afd6419307d34bdb1eb69e64f5405d158e1e39de90bb4a82900830f114
 
 build:
   number: 0
