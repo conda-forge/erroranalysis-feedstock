@@ -1,5 +1,5 @@
 {% set name = "erroranalysis" %}
-{% set version = "0.4.5" %}
+{% set version = "0.5.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,19 +7,19 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/erroranalysis-{{ version }}.tar.gz
-  sha256: c217f205103cc14346e04382e42a587411eb564a130cd2cd768600ec6acf0085
+  sha256: ff2c52a562e692c95046f52724dce65d92dd1a28bfc5d4848946c82744d32120
 
 build:
-  number: 0
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+  number: 0
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.7
     - pip
   run:
-    - python >=3.6
+    - python >=3.7
     - numpy >=1.17.2
     - pandas >=0.25.1,<2.0.0
     - scipy >=1.4.1
