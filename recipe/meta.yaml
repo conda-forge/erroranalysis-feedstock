@@ -11,7 +11,10 @@ source:
 
 build:
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+  script:
+    - cp -R {{ RECIPE_DIR }}/requirements-object-detection.txt {{ SRC_DIR }}/requirements-object-detection.txt  # [unix]
+    - echo f | xcopy /f /y /S %RECIPE_DIR%\requirements-object-detection.txt %SRC_DIR%\requirements-object-detection.txt  # [win]
+    - {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   number: 0
 
 requirements:
