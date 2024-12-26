@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/erroranalysis-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/erroranalysis-{{ version }}.tar.gz
   sha256: 238e3fce843ac7077b9ae61f56145b06bbd358ed49563712bd5467bbc752c33b
 
 build:
@@ -15,14 +15,14 @@ build:
     - cp -R {{ RECIPE_DIR }}/requirements-object-detection.txt {{ SRC_DIR }}/requirements-object-detection.txt  # [unix]
     - echo f | xcopy /f /y /S %RECIPE_DIR%\requirements-object-detection.txt %SRC_DIR%\requirements-object-detection.txt  # [win]
     - {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.7
+    - python {{ python_min }}
     - pip
   run:
-    - python >=3.7
+    - python >={{ python_min }}
     - numpy >=1.17.2
     - pandas >=0.25.1,<2.0.0
     - scipy >=1.4.1
@@ -37,6 +37,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/microsoft/responsible-ai-widgets
