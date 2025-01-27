@@ -1,5 +1,5 @@
 {% set name = "erroranalysis" %}
-{% set version = "0.5.4" %}
+{% set version = "0.5.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/erroranalysis-{{ version }}.tar.gz
-  sha256: 238e3fce843ac7077b9ae61f56145b06bbd358ed49563712bd5467bbc752c33b
+  sha256: bdc4f37c91befeac1248ea7fc7d2aca9e4d5a3830c8ff4f34d43908f2dd37c61
 
 build:
   noarch: python
@@ -15,7 +15,7 @@ build:
     - cp -R {{ RECIPE_DIR }}/requirements-object-detection.txt {{ SRC_DIR }}/requirements-object-detection.txt  # [unix]
     - echo f | xcopy /f /y /S %RECIPE_DIR%\requirements-object-detection.txt %SRC_DIR%\requirements-object-detection.txt  # [win]
     - {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
