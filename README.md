@@ -27,7 +27,6 @@ monitor AI more responsibly, and take better data-driven actions.
 
 PyPI: [https://pypi.org/project/erroranalysis/](https://pypi.org/project/erroranalysis/)
 
-
 Current build status
 ====================
 
