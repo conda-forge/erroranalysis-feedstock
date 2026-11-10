@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: erroranalysis
-  version: 0.5.5
+  version: "0.6.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/erroranalysis-${{ version }}.tar.gz
-  sha256: bdc4f37c91befeac1248ea7fc7d2aca9e4d5a3830c8ff4f34d43908f2dd37c61
+  sha256: 467cf9b0dd4453424be5d003adc3002b5293409a47c4cfad4962e6861f1e4ee6
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script:
     - if: unix
